@@ -9,7 +9,7 @@ let aboutMe = {}
 aboutMe.name = 'Mauro'
 
 // Step 3: Add another property named photo with a value of the image path and name (used in Task 2) as a string
-aboutMe.imgPath = '../images/whatsapp-image.jpeg'
+aboutMe.imgPath = 'images/whatsapp-image.jpeg'
 
 // Step 4: Add another property named favoriteFoods with a value of an array of your favorite foods as strings ( hint: [] )
 aboutMe.favoriteFoods = ['pizza', 'milanesas', 'salad', 'empanadas', 'asado']

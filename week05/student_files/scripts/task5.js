@@ -132,24 +132,42 @@ const reset = () => {
 
 const sortBy = (sortSelection) => {
     reset()
-    const sortedTemples = temples.sort((a, b) => {
-        if(sortSelection === 'templeNameAscending') {
-            return 1
-        }
-        else if(sortSelection === 'templeNameDescending') {
-            return -1
-        }
-        else {
-            return 0
-        } 
-    })
-    output(sortedTemples)
+    if(sortSelection === 'templeNameAscending') {
+        console.log(`My sort selection is: ${sortSelection}`)
+        const sortedTemples = temples.sort((a, b) => {
+            if(a.templeName > b.templeName) {
+                return 1
+            }
+            else if(a.templeName < b.templeName){
+                return -1
+            }
+            else {return 0}
+        })
+        console.log(sortedTemples)
+        output(sortedTemples)
+    }
+    else if(sortSelection === 'templeNameDescending') {
+        console.log(`My other sort selection is: ${sortSelection}`)
+        const sortedTemples = temples.sort((a, b) => {
+            if(a.templeName < b.templeName) {
+                return 1
+            }
+            else if(a.templeName > b.templeName){
+                return -1
+            }
+            else {return 0}
+        })
+        console.log(sortedTemples)
+        output(sortedTemples)
+    }
+    
+    
 }
 
 // Step 9: Add a change event listener to the HTML element with an ID of sortBy that calls the sortBy function
 /* STRETCH */
 document.getElementById('sortBy').addEventListener('change', (e) => {
-    console.log(e.target.value)
+    
     sortBy(e.target.value)
 })
 

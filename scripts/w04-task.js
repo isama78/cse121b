@@ -3,7 +3,7 @@
 /* Profile Object  */
 let myProfile = {
     name: "Mauro Jose Isa",
-    photo: "images/whatsApp-image.jpeg",
+    photo: "images/whatsapp-image.jpeg",
     favoriteFoods: ['pizza','hamburger', 'salad', 'milanesa', 'melon'],
     hobbies: ["read", "travel", "coding", "movies"],
     placesLived: []

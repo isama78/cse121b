@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(167, 181, 194);
+}
+
+body .content {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 60%;
+    background-color: #fff;
+    height: auto;
+    text-align: center;
+}
+
+body .content form label {
+    width: 23rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+body .content .title {
+    margin-bottom: 1rem;
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections-container .ip-info {
+    margin: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: rgb(167, 181, 194);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+input {
+    outline: none;
+    padding-left: 0.3rem;
+    height: 2rem;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+section {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+section img {
+    width: 10rem;
+}
+
+section h3 {
+    margin-bottom: 1rem;
+}
+
+.loading>span {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 3rem;
+}
+
+
+
+.loading.hide {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .loading>span {
+        left: 25%;
+    }
+}
+
+@media (max-width: 599px) {
+    body .content form label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.5rem;
+    }
+
+    body .content {
+        width: 90%;
+        height: auto;
+    }
+
+    form {
+        display: flex;
+    }
+}
+
+@media (max-width: 280px) {
+    .loading>span {
+        left: 15%;
+    }
+}

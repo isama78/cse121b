@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+    <title>IP Geolocation App</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">IP Geolocation App</h1>
+      <form>
+        <label for="ip">
+          Enter IP
+          <input id="ip" type="text" placeholder="e.g. 185.65.135.230" />
+          <button type="submit">Search</button>
+        </label>
+      </form>
+      <div class="sections-container">
+        <h2 class="ip-info"></h2>
+
+        <section class="location">
+          <h3 class="title2">Location Info</h3>
+          <p class="city"></p>
+          <p class="country"></p>
+          <p class="continent"></p>
+          <img class="flag" src="" alt="" />
+        </section>
+
+        <section class="languages">
+          <h3 class="title2">Languages Info</h3>
+          <div class="lang"></div>
+        </section>
+
+        <section class="currency-section">
+          <h3 class="title2">Currency Info</h3>
+          <p class="currency"></p>
+          <p class="currency-code"></p>
+          <p class="currency-native-short"></p>
+        </section>
+
+        <section class="time-zone-section">
+          <h3 class="title2">Time Zone</h3>
+          <p class="time-zone"></p>
+          <p class="time-zone-offset"></p>
+        </section>
+
+        <section class="organization-section">
+          <h3 class="title2">Organization Info</h3>
+          <p class="organization"></p>
+          <p class="region"></p>
+          <p class="domain"></p>
+        </section>
+
+        <section class="reputation-section">
+          <h3 class="title2">Reputation Info</h3>
+          <p class="risk-level"></p>
+          <p class="malicious"></p>
+          <p class="abusive"></p>
+          <p class="message"></p>
+        </section>
+
+        <section class="general-description">
+          <h3 class="title2">General Description</h3>
+          <p class="business"></p>
+          <p class="military"></p>
+          <p class="goverment"></p>
+          <p class="educational"></p>
+          <p class="tor"></p>
+          <p class="vpn-proxy"></p>
+        </section>
+        <section class="map-section">
+          <h3 class="title2">Coordinates</h3>
+          <p class="lat"></p>
+          <p class="lng"></p>
+        </section>
+      </div>
+    </div>
+    <div class="loading">
+        <span>Loading...</span>
+    </div>
+    <script src="./scripts/geolocationApi.js" type="module"></script>
+  </body>
+</html>
